@@ -1,49 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
-import { AppComponent } from './app.component';
+import { Router } from "@angular/router";
+import { Form } from "@angular/forms";
 import { NavigationComponent } from './navigation/navigation.component';
 import { HighlightDirective } from './highlight.directive';
-import { RouterModule, Routes } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { CatalogComponent } from './catalog/catalog.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { ShopComponent } from './shop/shop.component';
+import { AboutComponent } from './about/about.component';
+import { FooterComponent } from './footer/footer.component';
 
-const appRoutes: Routes = [
-  { path: '', component:AppComponent },
-  { path: 'hero/:id',      component: HeroDetailComponent },
-  {
-    path: 'heroes',
-    component: HeroListComponent,
-    data: { title: 'Heroes List' }
-  },
-  { path: '',
-    redirectTo: '/heroes',
-    pathMatch: 'full'
-  },
-  { path: '**', component: PageNotFoundComponent }
-];
-
-@NgModule({
-  imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
-    // other imports here
-  ],
-  ...
-})
-export class AppModule { }
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    HighlightDirective
+    HighlightDirective,
+    HomeComponent,
+    CatalogComponent,
+    BlogComponent,
+    ContactComponent,
+    ShopComponent,
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
