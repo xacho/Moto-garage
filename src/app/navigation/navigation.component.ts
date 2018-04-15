@@ -9,27 +9,27 @@ export class NavigationComponent implements OnInit {
   public navList:Array<Object>= [
     {
       name:'Home',
-      link:'/home'
+      link:'home'
     },
     {
       name:'Cataloge',
-      link:'/cataloge'
+      link:'catalog'
     },
     {
-      name:'Pages',
-      link:'/page'
+      name:'Shop',
+      link:'shop'
     },
     {
       name:'Blog',
-      link:'/blog'
+      link:'blog'
     },
     {
-      name:'Orders',
-      link:'/orders'
+      name:'About Us',
+      link:'about'
     },
     {
       name:'Contacts',
-      link:'/contacts'
+      link:'contacts'
     }
   ]
   public navTools:Array<object>=[
