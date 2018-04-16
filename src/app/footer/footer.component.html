@@ -1,10 +1,27 @@
 <nav class="footer">
   <div class="footer-container">
-    <ul>
-      <p></p>
-      <li>
-        <a></a>
-      </li>
-    </ul>
+    <div class="footer-menu" >
+      <ul *ngFor="let item of footerList" class="footer-menu-head">
+        <p>{{item.head}}</p>
+        <li *ngFor="let listItem of item.list" class="footer-menu-list">
+          <a routerLink={{listItem.link}}>{{listItem.name}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-info">
+        <p>Our online support is available send Us message</p>
+        <ul class="footer-info-list">
+          <li *ngFor="let logo of footerLogo" >
+            <a href="{{logo.link}}">
+            <img src="{{logo.logo}}" alt="{{name}}" class="footer-info-logo">
+            </a>
+          </li>
+        </ul>
+        <form action="#" class="footer-email">
+          <input class="subscribe" placeholder="Email address">
+          <button class="subscribeBtn">Subscribe</button> 
+        </form>
+      </div>
   </div>
+  
 </nav>

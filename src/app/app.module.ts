@@ -14,8 +14,10 @@ import { ContactComponent } from './contact/contact.component';
 import { ShopComponent } from './shop/shop.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
-
-
+import { SliderComponent } from './slider/slider.component';
+import { SliderModule } from 'angular-image-slider';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChoosboxComponent } from './choosbox/choosbox.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,15 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     ShopComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    SliderComponent,
+    ChoosboxComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    SliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

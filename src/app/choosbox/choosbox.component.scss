@@ -1,0 +1,27 @@
+.choos-box{
+    display: flex;
+    justify-content: space-between;
+    height: 170px;
+    background-color: steelblue;
+    list-style: none;
+    
+}
+.choos-list{
+    width: 100vw;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  position: relative;
+  height: 170px;
+  //top:40vh;
+  display:flex;
+  list-style: none;
+  justify-content: space-between;
+  align-content: center;
+  &-item{
+     position: relative;
+     width: 14vw; 
+  }
+  &-icon{
+      width: 14vw
+  }
+}
