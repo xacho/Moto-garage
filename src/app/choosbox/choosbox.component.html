@@ -1,10 +1,11 @@
-<div class="choos-box">
+<div class="choos">
   <ul class="choos-list">
     <li *ngFor="let item of choosList"
-    class="choos-list-item">
-      <a class="choos-list-icon" 
-      routerLink={{item.link}}>
-        <img src="{{item.logo}}" alt="{{item.name}}">{{item.name}}
+    class="choos-list-item" hoverSelect>
+      <a routerLink={{item.link}}>
+        <img  src="{{item.logo}}" 
+        class="choos-list-icon"
+        alt="{{item.name}}">{{item.name}}
       </a>
     <p>{{item.head}}</p>
     </li>

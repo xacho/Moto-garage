@@ -9,49 +9,59 @@ export class NavigationComponent implements OnInit {
   public navList:Array<Object>= [
     {
       name:'Home',
-      link:'home'
+      link:'home',
+      isActive:true,
     },
     {
       name:'Cataloge',
-      link:'catalog'
+      link:'catalog',
+      isActive:false,
     },
     {
       name:'Shop',
-      link:'shop'
+      link:'shop',
+      isActive:false,
     },
     {
       name:'Blog',
-      link:'blog'
+      link:'blog',
+      isActive:false,
     },
     {
       name:'About Us',
-      link:'about'
+      link:'about',
+      isActive:false,
     },
     {
       name:'Contacts',
-      link:'contacts'
+      link:'contacts',
+      isActive:false,
     }
   ]
   public navTools:Array<object>=[
     {
       name:'search',
       link:'',
-      logo:'/assets/search.png'
+      logo:'/assets/search.png',
+      isActive:false,
     },
     {
       name:'favorite',
       link:'./pages',
-      logo:'/assets/favorite.png'
+      logo:'/assets/favorite.png',
+      isActive:false,
     },
     {
       name:'basket',
       link:'./',
-      logo:'/assets/basket.png'
+      logo:'/assets/basket.png',
+      isActive:false,
     },
     {
       name:'Account',
       link:'./',
-      logo:'/assets/account.png'
+      logo:'/assets/account.png',
+      isActive:false,
     },
    /* {
       name:'',
