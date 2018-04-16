@@ -1,10 +1,10 @@
 <nav class="navigation">
   <div class="navigation-container">
-      <a class="navigation-logo" routerLink="/home">
-        <img src="/assets/logo.png">
+      <a  routerLink="/home">
+        <img class="navigation-logo" src="/assets/logo.png">
       </a>
-     <ul class="navigation-list">
-      <li *ngFor="let item of navList">
+     <ul  class="navigation-list" >
+      <li  *ngFor="let item of navList" hoverSelect>
         <a class="navigation-list-item" 
         routerLink={{item.link}}>
           {{item.name}}
@@ -12,7 +12,7 @@
       </li>
     </ul>
     <ul class="navigation-tools">
-      <li *ngFor="let item of navTools">
+      <li *ngFor="let item of navTools" hoverSelect>
         <a class="navigation-tools-item"
         routerLink="{{item.link}}">
         <img src="{{item.logo}}" alt="{{item.name}}">
