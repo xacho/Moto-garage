@@ -11,11 +11,27 @@ export class NavigationComponent implements OnInit {
       name:'Home',
       link:'home',
       isActive:true,
+      
     },
     {
       name:'Cataloge',
       link:'catalog',
       isActive:false,
+      list:[
+        {
+          name:'Motorcycles',
+          link:''
+        },
+        {
+          name:'Scooter',
+          link:''
+        },
+        {
+        name:'Quadrocycle',
+        link:''
+        },
+      ],
+      
     },
     {
       name:'Shop',
