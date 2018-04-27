@@ -73,12 +73,7 @@ export class NavigationComponent implements OnInit {
       logo:'/assets/basket.png',
       isActive:false,
     },
-    {
-      name:'Account',
-      link:'./',
-      logo:'/assets/account.png',
-      isActive:false,
-    },
+    
    /* {
       name:'',
       link:'./',
@@ -87,6 +82,33 @@ export class NavigationComponent implements OnInit {
   
   ]
   
+  public accountList:Array<object>=[
+    {
+      name:'Masseges',
+      link:'./',
+      logo:'/assets/account/sms.png',
+      isActive:false,
+    },
+    {
+      name:'Bookmarks',
+      link:'./',
+      logo:'/assets/favorite.png',
+      isActive:false,
+    },
+    {
+      name:'Settings',
+      link:'./',
+      logo:'/assets/account/settings.png',
+      isActive:false,
+    },
+    {
+      name:'Log out',
+      link:'./',
+      logo:'/assets/account/exit.png',
+      isActive:false,
+    },
+
+  ]
 
   ngOnInit() {
   }

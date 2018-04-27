@@ -18,6 +18,8 @@ import { SliderComponent } from "./slider/slider.component";
 import { SliderModule } from 'angular-image-slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChoosboxComponent } from './choosbox/choosbox.component';
+import { SearchPanelComponent } from './search-panel/search-panel.component';
+import { SearchButtonComponent } from './search-button/search-button.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ChoosboxComponent } from './choosbox/choosbox.component';
     AboutComponent,
     SliderComponent,
     FooterComponent,
-    ChoosboxComponent
+    ChoosboxComponent,
+    SearchPanelComponent,
+    SearchButtonComponent
   ],
   imports: [
     BrowserModule,
