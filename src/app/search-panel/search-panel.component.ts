@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-panel.component.scss']
 })
 export class SearchPanelComponent implements OnInit {
-
-  constructor() { }
+public mapParts:Array<string>=[
+  'Engine','Tiers', 'Wheels','Seats','Hand Controls'
+]
+  constructor() {}
 
   ngOnInit() {
   }

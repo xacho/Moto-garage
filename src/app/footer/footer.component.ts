@@ -65,32 +65,32 @@ public footerList:Array<Object>=
 public footerLogo:Array<object>=[
 {
   name:'Twitter',
-  logo:'/assets/twitter.png',
+  logo:'/assets/footerSocial/twitter.png',
   link:'https://twitter.com/',
 },
 {
   name:'Facebook',
-  logo:'/assets/facebook.png',
+  logo:'/assets/footerSocial/facebook.png',
   link:'https://www.facebook.com/',
 },
 {
   name:'Pinterest',
-  logo:'/assets/pinterest.png',
+  logo:'/assets/footerSocial/pinterest.png',
   link:'https://www.pinterest.com/',
 },
 {
   name:'Google Plus',
-  logo:'/assets/google-plus.png',
+  logo:'/assets/footerSocial/google-plus.png',
   link:'https://plus.google.com/',
 },
 {
   name:'Youtube',
-  logo:'/assets/youtube.png',
+  logo:'/assets/footerSocial/youtube.png',
   link:'https://www.youtube.com/',
 },
 {
   name:'Share',
-  logo:'/assets/social-normal.png',
+  logo:'/assets/footerSocial/social-normal.png',
   link:'',
 }
 

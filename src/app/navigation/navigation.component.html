@@ -21,28 +21,25 @@
     </ul>
     <ul class="navigation-tools">
       <li *ngFor="let item of navTools" >
-        <a class="navigation-tools-item"
-        routerLink="{{item.link}}">
-        <img src="{{item.logo}}" alt="{{item.name}}">
-      </a>
+        <div class="dropdown">
+          <a class="navigation-tools-item"
+              routerLink="{{item.link}}">  
+            <img src="{{item.logo}}" alt="{{item.name}}">
+          </a>
+        <div class="dropdown-content">
+          <li *ngFor="let itemList of item.list" >
+            <a  routerLink="{{itemList.link}}"> 
+            <img src="{{itemList.logo}}" class="account-list-icon" >
+              {{itemList.name}}
+              </a>
+               </li>
+          </div>
+        </div>
+       
       </li>
-      <div class="account" >
-          <datalist class="datalist">
-            <a class="account" routerLink="">
-              <img class="account-icon" src="/assets/account/account.png">
-            </a>
-            
-              <datalist class="dropdown-content-account">
-                <li *ngFor="let item of accountList" >
-                <a class="account-list-item" routerLink="{{item.link}}"> 
-                <img src="{{item.logo}}" class="account-list-icon" >
-                  {{item.name}}
-                  </a>
-                   </li>
-              </datalist>
-          </datalist>
+       
 
-      </div>
+      
     </ul>
   </div>
 </nav> 

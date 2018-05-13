@@ -1,3 +1,17 @@
-<p>
-  search-panel works!
-</p>
+<div class="search">
+  <div class="search-container">
+    <h1>SEARCH</h1>
+    <app-search-button></app-search-button>
+    <p><img src="/assets/mo.jpg"> </p>
+    <div class="search-container-map">
+      <ul class="search-container-map-parts">
+        <li *ngFor="let item of mapParts"
+        class="{{item}}">{{item}}
+        </li>
+        <p>
+          
+        </p>
+      </ul>
+    </div>
+  </div>
+</div>

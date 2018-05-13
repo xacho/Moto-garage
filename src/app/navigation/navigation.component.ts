@@ -74,41 +74,42 @@ export class NavigationComponent implements OnInit {
       isActive:false,
     },
     
-   /* {
-      name:'',
+    {
+      name:'account',
       link:'./',
-      logo:'/assets/'
-    }*/
+      logo:'/assets/account/account.png',
+      list:[
+        {
+          name:'Masseges',
+          link:'./',
+          logo:'/assets/account/sms.png',
+          isActive:false,
+        },
+        {
+          name:'Bookmarks',
+          link:'./',
+          logo:'/assets/favorite.png',
+          isActive:false,
+        },
+        {
+          name:'Settings',
+          link:'./',
+          logo:'/assets/account/settings.png',
+          isActive:false,
+        },
+        {
+          name:'Log out',
+          link:'./',
+          logo:'/assets/account/exit.png',
+          isActive:false,
+        },
+    
+      ]
+    }
   
   ]
   
-  public accountList:Array<object>=[
-    {
-      name:'Masseges',
-      link:'./',
-      logo:'/assets/account/sms.png',
-      isActive:false,
-    },
-    {
-      name:'Bookmarks',
-      link:'./',
-      logo:'/assets/favorite.png',
-      isActive:false,
-    },
-    {
-      name:'Settings',
-      link:'./',
-      logo:'/assets/account/settings.png',
-      isActive:false,
-    },
-    {
-      name:'Log out',
-      link:'./',
-      logo:'/assets/account/exit.png',
-      isActive:false,
-    },
-
-  ]
+ 
 
   ngOnInit() {
   }
